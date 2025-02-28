@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Cho phép tất cả các endpoint
-                .allowedOrigins("http://localhost:9529")  // Thay bằng URL của ứng dụng Vue.js
+                .allowedOrigins("http://localhost:9527")  // Thay bằng URL của ứng dụng Vue.js
                 .allowedMethods("GET", "POST", "PUT", "DELETE")  // Các phương thức cho phép
                 .allowedHeaders("*")  // Cho phép tất cả các header
                 .allowCredentials(true);
